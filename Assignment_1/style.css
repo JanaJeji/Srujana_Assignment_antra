@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color:black;
+    
+}
+
+.long {
+    width: 100% !important;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    width: calc(50% - 5px);
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 0 10px;
+}
+
+.user-input-tc{
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.user-input-tc-text span{
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid rgb(128, 128, 128);
+    background-color: #428BCA;
+    display: inline-flex;
+}
+
+.form-btn input{
+    cursor: pointer;
+}
+
+.user-input-radiobtn{
+    float:left;
+    margin: 2% 5% 3% 0;
+}
+
+.user-input-tc-text a{
+    color: #5B9AD1;
+}
+.form-btn{
+    height: 40px;
+    width: 100%;
+}
+
+.form-btn input{
+    width: calc(50% - 5px);
+    font-size: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    border:none;
+    border-radius: 25px;
+    color: white;
+    background: rgba(63, 114, 76, 0.7);
+}
+
+.form-btn input:hover{
+    background: rgba(204, 46, 138, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.form-btn .input-register{
+    margin-right: 5px;
+    background-color: #428BCA;
+}
+
+.form-btn .input-signin{
+    background-color: #5CB85C;
+}
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box, .form-btn input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-radiobtn{
+        float:left;
+        margin: 2% 5% 16% 0;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
