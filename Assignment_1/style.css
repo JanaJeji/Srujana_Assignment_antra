@@ -69,6 +69,12 @@ body{
     padding: 0 10px;
 }
 
+.user-input-box input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+}
+
 .user-input-tc{
     margin-bottom: 12px;
     width: 100%;
