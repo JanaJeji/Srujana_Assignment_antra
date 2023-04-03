@@ -21,8 +21,16 @@
     padding-left: 5%;
 }
 
+.col-m{
+    margin: 10px 0 0 0;
+}
+.box{
+    width: 100%;
+    border: 1px solid black;
+}
+
 .row .col-medium .sec-about {
-    width: 55%;
+    width: 92%;
     padding: 1%;
     background-color: aliceblue;
 }
